@@ -1,0 +1,279 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the entire page */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #c5f1ff;
+    color: #333;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make the page full width */
+.investor-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: #001632;
+    padding: 20px 5%; /* Reduced left-right padding */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo - Move further to the left */
+.logo {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+    margin-right: 40px; /* Space between logo and nav links */
+    margin-left: 0; /* Ensure it's fully to the left */
+}
+
+/* Navigation */
+/* Navigation - Align to the left */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Remove unnecessary list styles */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Links */
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 120px 18%; /* Wider left-right spacing */
+    width: 100%;
+}
+
+/* Ensure the h2 text stays in a single line */
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: visible; /* Allows full visibility */
+    text-overflow: clip; /* Ensures no "..." is shown */
+    display: inline-block; /* Helps maintain a single line */
+    width: auto; /* Ensures it takes only necessary space */
+    max-width: 100%; /* Ensures it fits the container */
+}
+
+
+.explore-button {
+    margin-top: 20px;
+    background: white;
+    color: #007bff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.explore-button:hover {
+    background: #e0e0e0;
+}
+
+/* Why Invest Section */
+.why-invest ul {
+    list-style-position:inside;
+    padding-left:0;
+    text-align:left;
+    display:inline-block;
+    padding: 80px 18%;
+    background: #c5f1ff;
+    width: 100%;
+    margin-top:20px;
+}
+
+.why-invest li {
+    font-size: 18px;
+    margin-bottom: 5px; /* Reduced gap between bullet points */
+    padding-left: 5px; /* Adjust padding for better alignment */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Reduced gap between emoji and text */
+}
+
+/* Investment Section */
+.investment-section {
+    padding: 100px 18%;
+    text-align: center;
+    width: 100%;
+}
+
+.investment-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width: 380px; /* Slightly wider cards */
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.details-button {
+    margin-top: 15px;
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.details-button:hover {
+    background: #218838;
+}
+
+/* How It Works */
+.how-it-works {
+    background: #eee;
+    padding: 100px 18%;
+    text-align: center;
+    width: 100%;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.step {
+    padding: 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Slightly wider steps */
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 80px 18%;
+    background: #fff;
+    width: 100%;
+}
+
+.testimonials p {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 80px 18%;
+    background: #007bff;
+    color: white;
+    width: 100%;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cta-button:hover {
+    background: #e0e0e0;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px 12%;
+    }
+
+    .hero, .investment-section, .how-it-works, .cta {
+        padding: 80px 12%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 10%;
+    }
+
+    .hero, .investment-section, .how-it-works, .cta {
+        padding: 60px 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .steps, .investment-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step, .card {
+        width: 90%;
+    }
+}
